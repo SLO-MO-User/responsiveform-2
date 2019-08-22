@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background: rgba(120, 144, 156, 1);
+  color: rgba(38, 50, 56, 1);
+  line-height: 1.6;
+  padding: 1em;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.brand {
+  text-align: center;
+}
+
+.wrapper {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(38, 50, 56, 0.45);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.login {
+  background: rgba(207, 216, 220, 1);
+}
+
+/* FORM STYLES */
+
+.login form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.login form label {
+  display: block;
+}
+
+.login form p {
+  margin: 0;
+}
+
+.login form button,
+.login form input {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid rgba(207, 216, 220, 1);
+}
+
+.login form input:hover,
+.login form input:focus {
+  border: 1px double rgba(120, 144, 156, 1);
+}
+
+.login form button {
+  color: rgba(38, 50, 56, 1);
+  background: rgba(207, 216, 220, 1);
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px 0 rgba(38, 50, 56, 0.45);
+  transition: transform 200ms ease-out;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.login form button:hover,
+.login form button:focus {
+  /*  position: relative;
+  top: -5px; */
+  transform: translate(0, -5px);
+  background: rgba(120, 144, 156, 1);
+  color: #fff;
+  outline: 0;
+}
+
+/* FOR LARGE SCREENS */
+
+@media (min-width: 700px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+}
